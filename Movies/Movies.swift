@@ -9,11 +9,18 @@ import Foundation
 
 class Movies{
     private var index = 0;
-    let movie_dic : [String: String] = ["Back to the Future" : "Michael J. Fox", "Interstellar" : "Matthew McConaughey", "The Matrix" : "Keanu Reeves", "Twelve Monkeys" : "Bruce Willis", "District 9" : "Sharlto Copley", "Inception": "Leonardo DiCaprio", "The Butterfly Effect":"Ashton Kutcher", "Ghost in the Shell":"Atsuko Tanaka"]
+    let movie_dic : [String: String] = ["Michael J. Fox": "Back to the Future",
+                                        "Matthew McConaughey": "Interstellar",
+                                        "Keanu Reeves": "The Matrix",
+                                        "Bruce Willis": "Twelve Monkeys",
+                                        "Sharlto Copley": "District 9",
+                                        "Leonardo DiCaprio": "Inception",
+                                        "Ashton Kutcher": "The Butterfly Effect",
+                                        "Atsuko Tanaka": "Ghost in the Shell"]
     private var movieTitles: [String]
     
     init(){
-        self.movieTitles = Array(movie_dic.keys)
+        self.movieTitles = Array(movie_dic.values)
     }
     
     func nextMovie() -> String? {
