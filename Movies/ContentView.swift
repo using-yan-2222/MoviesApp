@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Movies
 //
-//  Created by Albert Zou on 9/7/24.
+//  Created by Yan Zou on 9/7/24.
 //
 
 import SwiftUI
